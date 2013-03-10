@@ -1,0 +1,52 @@
+Options +FollowSymlinks
+Options -Indexes
+RewriteEngine On
+
+RewriteBase /
+
+RewriteCond %{HTTP_HOST} !^www.ukora.com$
+RewriteRule ^(.*)$ http://www.ukora.com/$1 [R=301,NC,L,QSA]
+
+#favicon redirect
+RewriteRule ^(.+)favicon.ico$ /favicon.ico [R=301,NC,L]
+
+#Add to registry redirects
+RewriteRule ^assets/registry/add.js /assets/registry/add.php [NC,L]
+RewriteRule ^assets/registry/styles.css /assets/registry/styles.php [NC,L]
+
+#tag page page
+RewriteRule ^my/(.*)/ /my/?ui=$1 [NC,L,QSA]
+
+#search page page
+RewriteRule ^s/(.*)/ /search/?q=$1 [NC,L,QSA]
+
+#tag page page
+RewriteRule ^tag/(.*)/ /tag/?tag=$1 [NC,L,QSA]
+
+#tag page page
+RewriteRule ^item/(.*)-(.*)/ /item/?item_id=$2 [NC,L,QSA]
+
+#reset password
+RewriteRule ^reset/(.*)/$ reset/?pwresetkey=$1 [L,NC,QSA]
+
+#payment method redirect
+RewriteRule ^cart/pmethod/([^\/]+)$ /cart/pmethod/$1/ [R=301,NC,L,QSA]
+RewriteRule ^cart/pmethod/([^\/]+)/ /cart/?pmethod=$1 [L,NC,QSA]
+
+#order page
+RewriteRule ^account/order-([0-9]+) /account/order?order_id=$1 [NC,L,QSA]
+
+#Find missing images
+RewriteCond %{REQUEST_FILENAME} !-f 
+RewriteCond %{REQUEST_URI} \.(gif|jpg|jpeg|png)$ 
+RewriteRule .* assets/layout/noimage.jpg [L]
+
+#Page template
+RewriteRule ^page\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /page.php [L]
+
+#Page not found
+ErrorDocument 404 /404.php 
+ 
