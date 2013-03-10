@@ -1,0 +1,14 @@
+* { margin: 0; padding: 0; text-align: left; }
+body { font-family: Arial, Verdana, Serif; background-color: white !important; width: auto !important; min-width: inherit; }
+a { text-decoration: none; }
+img { border: none; }
+h1 { }
+h2 { }
+h3 { }
+h4 { }
+p { }
+ul { list-style: none; }
+table { width: 100%; }
+td { vertical-align: top; }
+
+:focus { outline-width: 0pt; outline-style: none; }

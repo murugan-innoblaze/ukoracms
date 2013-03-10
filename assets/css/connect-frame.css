@@ -1,0 +1,48 @@
+body { background-color: white; font-family: Arial; font-size: 12px; }
+* { padding: 0; margin: 0; }
+input, textarea { background: url('/assets/layout/fields_bg.jpg') top left no-repeat white; padding: 3px; font-size: 14px; border: 1px solid #3b6ba1; }
+a { color: #4ba0ff; text-decoration: none; }
+
+.problem_mssg { padding: 5px 47px; color: #ffffff; font-size: 15px; font-weight: bold; background: url('/assets/img/errormark.png') 2% center #db3333 no-repeat; }
+
+#wrapper_signup { padding: 15px 15px; text-align: left; }
+#wrapper_signup h1 { font-size: 20px; color: #222222; }
+#wrapper_signup h2 { font-size: 16px; color: #333333; border: none; padding-bottom: 5px; }
+#wrapper_signup p { font-size: 11px; color: #333333; line-height: 100%; padding: 0px; margin: 0px; }
+
+#wrapper_signup table {  }
+#wrapper_signup table.wrapper_signup_outer.signin { }
+
+#wrapper_signup table.wrapper_signup_outer td { vertical-align: top; }
+#wrapper_signup table.wrapper_signup_outer td.signup_top_area { padding: 0 0 4px 0; border-bottom: 1px solid #cccccc; }
+#wrapper_signup table.wrapper_signup_outer td.signup_bottom_left { padding: 15px 20px 0 0; margin: 0;}
+#wrapper_signup table.wrapper_signup_outer td.signup_bottom_left h2 { padding-bottom: 5px; }
+#wrapper_signup table.wrapper_signup_outer td.signup_bottom_left div.or { height: 1px; border-bottom: 1px solid #cccccc; position: relative; margin: 20px 0; }
+#wrapper_signup table.wrapper_signup_outer td.signup_bottom_left div.or img { position: absolute; left: 60px; top: -14px; }
+
+#wrapper_signup table.wrapper_signup_outer td.signup_bottom_left a#facebook_login { height: 27px; width: 177px; background-image: url('/assets/img/bttn_facebook_login.gif'); background-repeat: no-repeat; background-position: top left; display: block; cursor: pointer; }
+#wrapper_signup table.wrapper_signup_outer td.signup_bottom_left a#facebook_login:hover { background-position: bottom left; }
+#wrapper_signup table.wrapper_signup_outer td.signup_bottom_left a#twitter_login { height: 27px; width: 177px; background-image: url('/assets/img/bttn_twitter_login.gif'); background-repeat: no-repeat; background-position: top left; display: block; cursor: pointer; }
+#wrapper_signup table.wrapper_signup_outer td.signup_bottom_left a#twitter_login:hover { background-position: bottom left; }
+#wrapper_signup table.wrapper_signup_outer td.signup_bottom_left a#google_login { height: 27px; width: 177px; background-image: url('/assets/img/bttn_google_login.gif'); background-repeat: no-repeat; background-position: top left; display: block; cursor: pointer; }
+#wrapper_signup table.wrapper_signup_outer td.signup_bottom_left a#google_login:hover { background-position: bottom left; }
+#wrapper_signup table.wrapper_signup_outer td.signup_bottom_left a#linkedin_login { height: 27px; width: 177px; background-image: url('/assets/img/bttn_linkedin_login.gif'); background-repeat: no-repeat; background-position: top left; display: block; cursor: pointer; }
+#wrapper_signup table.wrapper_signup_outer td.signup_bottom_left a#linkedin_login:hover { background-position: bottom left; }
+
+#wrapper_signup table.wrapper_signup_outer td.signup_bottom_right { padding: 15px 0 0 0; margin: 0; color: #333333; }
+#wrapper_signup table.wrapper_signup_outer td.signup_bottom_right h2 { padding-left: 25px; padding-bottom: 1px; }
+#wrapper_signup table.wrapper_signup_outer td.signup_bottom_right table.signup_fields_table { border-left: 1px solid #cccccc; margin-top: 0px; }
+#wrapper_signup table.wrapper_signup_outer td.signup_bottom_right table.signup_fields_table td { vertical-align: middle; }
+#wrapper_signup table.wrapper_signup_outer td.signup_bottom_right table.signup_fields_table td input { padding: 4px; font-size: 14px; }
+#wrapper_signup table.wrapper_signup_outer td.signup_bottom_right table.signup_fields_table td.label { font-weight: bold; font-size: 12px; font-weight: bold; padding-left: 25px; padding-top: 7px; padding-bottom: 2px; }
+#wrapper_signup table.wrapper_signup_outer td.signup_bottom_right table.signup_fields_table td.left { width: 204px; padding-left: 25px; vertical-align: top; }
+#wrapper_signup table.wrapper_signup_outer td.signup_bottom_right table.signup_fields_table td.left input { width: 180px; }
+#wrapper_signup table.wrapper_signup_outer td.signup_bottom_right table.signup_fields_table td.right { padding-left: 15px; }
+#wrapper_signup table.wrapper_signup_outer td.signup_bottom_right table.signup_fields_table td.bottom_area { padding-left: 25px; padding-top: 10px; }
+#wrapper_signup table.wrapper_signup_outer td.signup_bottom_right table.signup_fields_table td.bottom_area p { padding-bottom: 10px; }
+#wrapper_signup table.wrapper_signup_outer td.signup_bottom_right table.signup_fields_table td.bottom_area input.signup { border: none; background: none; background-image: url('/assets/img/signup_button.gif'); background-position: top left; background-repeat: no-repeat; display: block; display: block; height: 27px; width: 75px; cursor: pointer; }
+#wrapper_signup table.wrapper_signup_outer td.signup_bottom_right table.signup_fields_table td.bottom_area input.signup:hover { background-position: bottom left; }
+#wrapper_signup table.wrapper_signup_outer td.signup_bottom_right table.signup_fields_table td.bottom_area input.signin { border: none; background: none; background-image: url('/assets/img/login_button.gif'); background-position: top left; background-repeat: no-repeat; display: block; display: block; height: 27px; width: 75px; cursor: pointer; }
+#wrapper_signup table.wrapper_signup_outer td.signup_bottom_right table.signup_fields_table td.bottom_area input.signin:hover { background-position: bottom left; }
+#wrapper_signup table.wrapper_signup_outer td.signup_bottom_right table.signup_fields_table td.bottom_area input.submit_button { border: none; background: none; background-image: url('/assets/img/submit_button.gif'); background-position: top left; background-repeat: no-repeat; display: block; display: block; height: 27px; width: 75px; cursor: pointer; }
+#wrapper_signup table.wrapper_signup_outer td.signup_bottom_right table.signup_fields_table td.bottom_area input.submit_button:hover { background-position: bottom left; }

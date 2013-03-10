@@ -1,0 +1,3 @@
+<?php
+define('JAVASCRIPT_DELAY_FOR_WIDGET_LOAD', 1000);
+?>

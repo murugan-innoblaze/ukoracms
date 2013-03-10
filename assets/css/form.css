@@ -1,0 +1,52 @@
+.form_message { padding: 12px 27px; position: relative; margin-bottom: 12px; background-color: #eeeeee; }
+.form_message table { width: 100%; }
+.form_message table td { vertical-align: middle; color: #000000; font-style: italic; font-size: 12px; }
+.form_message table td img { vertical-align: middle; margin: 0px 5px 4px 0px; }
+
+.form_header {  }
+
+.form_area { margin: 12px 0px 24px 0px; }
+.form_area .input_row { margin: 0 0 12px 0; }
+.form_area .input_row.checked { background-color: #e7ebff; }
+.form_area .input_row.problem { background-color: #ffe7e7; }
+.form_area .input_row table { border: 1px solid #ccc; width: 100%; -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px; }
+.form_area .input_row table td { vertical-align: middle !important; }
+.form_area .input_row table td.label { font-size: 13px; text-transform: lowercase; color: #222; font-weight: bold; background-color: #eee; text-align: right; padding: 0 7px 0 0; width: 140px; border-right: 1px solid #ccc; }
+.form_area .input_row table td.input { }
+.form_area .input_row table td.input .inner_holder { position: relative; padding: 7px 54px 7px 0px; }
+.form_area .input_row table td.input .inner_holder .file_dialogue_target { padding: 0 0 7px 7px; display: none; font-size: 11px; color: #666666; }
+.form_area .input_row table td.input .inner_holder .file_dialogue_target img { vertical-align: middle; max-height: 200px; max-width: 300px; }
+.form_area .input_row table td.input .inner_holder input[type=text] { border: none; background: none; width: 100%; padding: 0 7px; font-size: 13px; color: #c4cbd3; }
+.form_area .input_row table td.input .inner_holder input[type=text].touched { color: #333333; }
+.form_area .input_row table td.input .inner_holder input[type=text]:focus { color: black; }
+.form_area .input_row table td.input .inner_holder input[type=password] { border: none; background: none; width: 100%; padding: 0 7px; font-size: 13px; color: #c4cbd3; }
+.form_area .input_row table td.input .inner_holder input[type=password].touched { color: #333333; }
+.form_area .input_row table td.input .inner_holder input[type=password]:focus { color: black; }
+.form_area .input_row table td.input .inner_holder div.close_icon { background-image: url('/assets/img/close_x_bg.png'); background-position: left top; display: block; height: 45px; width: 27px; position: absolute; top: -5px; right: 10px; z-index: 2; cursor: pointer; display: none; }
+.form_area .input_row table td.input .inner_holder div.close_icon:active { background-position: left bottom; }
+.form_area .input_row table td.input .inner_holder div.close_icon_uploader { background-image: url('/assets/img/close_x_bg.png'); background-position: left top; display: block; height: 45px; width: 27px; position: absolute; top: -5px; right: 10px; z-index: 2; cursor: pointer; }
+.form_area .input_row table td.input .inner_holder div.close_icon_uploader:active { background-position: left bottom; }
+table td.input .inner_holder select { margin-left: 7px; }
+table td.input .inner_holder select option {  }
+
+.form_area .input_row table td.textarea { }
+.form_area .input_row table td.textarea .inner_holder { position: relative; padding-right: 50px; }
+.form_area .input_row table td.textarea .inner_holder textarea { background: none; border: none; outline: none; overflow: hidden; height: 90px; width: 100%; font-size: 13px; color: #c4cbd3; padding: 11px 0 11px 7px; -moz-outline-style: none; font-family: Arial, Verdana, Serif; }
+.form_area .input_row table td.textarea .inner_holder textarea.touched { color: #333333; }
+.form_area .input_row table td.textarea .inner_holder textarea:focus { color: #000000; } 
+.form_area .input_row table td.textarea .inner_holder div.close_icon { background-image: url('/assets/img/close_x_bg.png'); background-position: left top; display: block; height: 45px; width: 27px; position: absolute; top: 0px; right: 10px; z-index: 2; cursor: pointer; }
+
+.form_area .input_row table td.associations { }
+.form_area .input_row table td.associations .inner_holder { }
+.form_area .input_row table td.associations .inner_holder ul { padding: 7px; }
+.form_area .input_row table td.associations .inner_holder ul li { margin: 1px 0; font-size: 14px; color: #eeeeee; padding: 2px; border: 1px solid #ffffff; cursor: pointer; }
+.form_area .input_row table td.associations .inner_holder ul li:hover { color: #000000; background-color: #e9ecf0; -moz-border-radius: 5px; border-radius: 5px; border: 1px solid #cccccc; }
+.form_area .input_row table td.associations .inner_holder ul li.selected { color: #000000; background-color: #e9ecf0; -moz-border-radius: 5px; border-radius: 5px; border: 1px solid #cccccc; -moz-box-shadow: inset -1px 1px 2px #c4cbd3; -webkit-box-shadow: inset -1px 1px 2px #c4cbd3; box-shadow: inset -1px 1px 2px #c4cbd3; border-top: 1px solid #9ba8b7; border-right: 1px solid #9ba8b7; border-bottom: 1px solid #b0bcca; border-left: 1px solid #b0bcca; }
+
+.form_area .button_row table { width: 100%; }
+.form_area .button_row input[type=reset] { height: 38px; padding: 5px 8px 5px 8px; background-color: #f1f3f8; border-right: 1px solid #999999; border-bottom: 1px solid #999999; border-left: 1px solid #cccccc; border-top: 1px solid #cccccc; color: #333333; font-size: 16px; background-image: url('/assets/layout/bttn_bg_rep_x_home.png'); background-position: center center; background-repeat: repeat-x; }
+.form_area .button_row input[type=reset]:active { height: 38px; padding: 5px 8px 5px 8px; background-color: #f1f3f8; border-right: 1px solid #999999; border-bottom: 1px solid #999999; border-left: 1px solid #cccccc; border-top: 1px solid #cccccc; color: #111111; font-size: 16px; background-image: url('/assets/layout/bttn_bg_rep_x_home.png'); background-position: center center; background-repeat: repeat-x; }
+.form_area .button_row button.cancel_button {height: 38px; padding: 5px 8px 5px 8px; background-color: #f1f3f8; border-right: 1px solid #999999; border-bottom: 1px solid #999999; border-left: 1px solid #cccccc; border-top: 1px solid #cccccc; color: #333333; font-size: 16px; background-image: url('/assets/layout/bttn_bg_rep_x_home.png'); background-position: center center; background-repeat: repeat-x;  }
+.form_area .button_row button.cancel_button:active { height: 38px; padding: 5px 8px 5px 8px; background-color: #f1f3f8; border-right: 1px solid #999999; border-bottom: 1px solid #999999; border-left: 1px solid #cccccc; border-top: 1px solid #cccccc; color: #111111; font-size: 16px; background-image: url('/assets/layout/bttn_bg_rep_x_home.png'); background-position: center center; background-repeat: repeat-x; }
+.form_area .button_row input.save_button { height: 38px; padding: 5px 8px 5px 8px; background-color: #f1f3f8; border-right: 1px solid #999999; border-bottom: 1px solid #999999; border-left: 1px solid #cccccc; border-top: 1px solid #cccccc; color: #333333; font-size: 16px; background-image: url('/assets/layout/bttn_bg_rep_x_home.png'); background-position: center center; background-repeat: repeat-x; }
+.form_area .button_row input.save_button:active { height: 38px; padding: 5px 8px 5px 8px; background-color: #f1f3f8; border-right: 1px solid #999999; border-bottom: 1px solid #999999; border-left: 1px solid #cccccc; border-top: 1px solid #cccccc; color: #111111; font-size: 16px; background-image: url('/assets/layout/bttn_bg_rep_x_home.png'); background-position: center center; background-repeat: repeat-x; }

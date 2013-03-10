@@ -1,0 +1,1 @@
+<?php include '../page.php'; exit(0); ?>

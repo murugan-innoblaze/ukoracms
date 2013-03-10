@@ -1,0 +1,88 @@
+.comments_block { font-size: 11px; font-family: "Lucida Grande", Verdana,Arial, "Bitstream Vera Sans", sans-serif; display: inline; }
+.comments_block table.comments_header {  }
+
+.comments_block .add_comments { background-color: #e7ecff; padding: 5px; margin: 4px 9px 14px 8px; width: 351px; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; }
+.comments_block .add_comments textarea.text_area_box { width: 300px; height: 30px; border: 1px solid #565656; font-size: 11px; font-family: "Lucida Grande", Verdana,Arial, "Bitstream Vera Sans", sans-serif; }
+.comments_block .add_comments textarea.text_area_box.in_focus { height: 50px; border: 2px solid #aabcff; }
+.comments_block .add_comments .buttons_block { width: 302px; text-align: right; padding: 6px 0 0 0; }
+.comments_block .add_comments .buttons_block button { font-size: 11px; font-family: "Lucida Grande", Verdana,Arial, "Bitstream Vera Sans", sans-serif; padding: 2px 4px; border: 1px solid #9ba8d4; background-color: #f3f6ff; color: #626983; cursor: pointer; }
+.comments_block .add_comments .buttons_block button.show_on_hover { background-color: transparent; border-color: transparent; }
+.comments_block .add_comments .buttons_block button.show_on_hover:hover { background-color: #f3f6ff; border-color: #9ba8d4; }
+
+.comments_block .contents_target { display: inline; }
+.comments_block .contents_target .comment_column { float: left; }
+.comments_block .contents_target .comment.even { }
+.comments_block .contents_target .comment.odd { }	
+
+.comments_block .contents_target .comment { width: 375px; background: url('/assets/img/comment_splash.png') 50% 0% no-repeat transparent; margin: 0 4px 4px 0; padding-top: 2px; }
+.comments_block .contents_target .comment .comment_mid { background: url('/assets/img/comment_splash.png') 100% 100% no-repeat transparent; padding-bottom: 8px; }
+.comments_block .contents_target .comment .comment_mid .comment_in { background: url('/assets/img/comment_splash.png') 0% 0% repeat-y transparent; padding: 0px 15px 0px 15px; margin-bottom: 6px; margin-top: 12px; }
+
+.comments_block .contents_target .comment table { width: 100%; }
+.comments_block .contents_target .comment table td.added_by { padding-bottom: 6px; }
+
+.comments_block .contents_target .comment table td.comment_left { width: 60px; font-size: 10px; text-align: center; padding: 0px 6px 0 0; }
+.comments_block .contents_target .comment table td.comment_left a.profile_pic { display: block; width: 50px; height: 50px; padding: 4px; border: 1px solid #eeeeee; border-radius: 4px; -moz-border-radius: 4px; margin: 0 auto; position: relative; }
+.comments_block .contents_target .comment table td.comment_left a.profile_pic div.ribbon { position: absolute; background: url('/assets/img/cbooth-ribbon.png') top left no-repeat transparent; width: 40px; height: 40px; z-index: 2; top: -3px; left: -3px; }
+.comments_block .contents_target .comment table td.comment_left a.profile_pic:hover { background-color: #cc7e7e; border-color: #790404; }
+.comments_block .contents_target .comment table td.comment_left a.profile_pic:hover div.ribbon { -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; filter: alpha(opacity=50); opacity: 0.5; }
+.comments_block .contents_target .comment table td.comment_left a.profile_pic img { width: 50px; height: 50px; border: 1px solid white; margin: -1px 0 0 -1px; }
+.comments_block .contents_target .comment table td.comment_left span.subtag { text-align: center; font-size: 8px; line-height: 90%; }
+
+.comments_block .contents_target .comment table td { padding-left: 12px; }
+.comments_block .contents_target .comment table td.comment_middle {  }
+.comments_block .contents_target .comment table td.comment_middle p { width: 210px; overflow-x: hidden; }
+
+.comments_block .contents_target .comment table td.comment_right { width: 20px; padding-left: 4px; }
+.comments_block .contents_target .comment table td.comment_right div.comment_tools { position: relative; }
+.comments_block .contents_target .comment table td.comment_right div.comment_tools div.voting_block { position: absolute; top: 12px; right: 0px; }
+.comments_block .contents_target .comment table td.comment_right div.comment_tools div.voting_block span.vote_up { display: block; height: 10px; width: 20px; background: url('/assets/img/comment_arrows.gif') -20px -10px no-repeat; cursor: pointer; }
+.comments_block .contents_target .comment:hover table td.comment_right div.comment_tools div.voting_block span.vote_up { background-position: 0px -10px; }
+.comments_block .contents_target .comment:hover table td.comment_right div.comment_tools div.voting_block span.vote_up:active { background-position: 0px 0px; }
+.comments_block .contents_target .comment table td.comment_right div.comment_tools div.voting_block span.vote_up:active { background-position: -20px 0px; }
+.comments_block .contents_target .comment table td.comment_right div.comment_tools div.voting_block span.vote_count { display: block; width: 20px; text-align: center; padding: 1px 0; font-size: 13px; }
+.comments_block .contents_target .comment table td.comment_right div.comment_tools div.voting_block span.vote_count span.pos { color: green; }
+.comments_block .contents_target .comment table td.comment_right div.comment_tools div.voting_block span.vote_count span.neu { color: gray; }
+.comments_block .contents_target .comment table td.comment_right div.comment_tools div.voting_block span.vote_count span.neg { color: red; }
+.comments_block .contents_target .comment table td.comment_right div.comment_tools div.voting_block span.vote_down { display: block; height: 10px; width: 20px; background: url('/assets/img/comment_arrows.gif') -20px -20px no-repeat; cursor: pointer; }
+.comments_block .contents_target .comment table td.comment_right div.comment_tools div.voting_block span.vote_down:active { background-position: -20px -30px; }
+.comments_block .contents_target .comment:hover table td.comment_right div.comment_tools div.voting_block span.vote_down { background-position: 0px -20px; }
+.comments_block .contents_target .comment:hover table td.comment_right div.comment_tools div.voting_block span.vote_down:active { background-position: 0px -30px; }
+
+.comments_block .contents_target .comment table td div.reply_button_block { text-align: right; padding-right: 89px; height: 30px; }
+.comments_block .contents_target .comment table td div.reply_button_block button { font-size: 11px; font-family: "Lucida Grande", Verdana,Arial, "Bitstream Vera Sans", sans-serif; padding: 2px; border: 1px solid #9ba8d4; background-color: #f3f6ff; margin: 5px 0 0 0; color: #626983; cursor: pointer; display: none; }
+.comments_block .contents_target .comment table td div.reply_button_block button.show_on_hover { background-color: transparent; border-color: transparent; }
+.comments_block .contents_target .comment table td div.reply_button_block button.show_on_hover:hover { background-color: #f3f6ff; border-color: #9ba8d4; }
+
+.comments_block .contents_target .comment table td div.reply_text_and_buttons { display: none; padding-left: 56px; }
+.comments_block .contents_target .comment table td div.reply_text_and_buttons textarea.text_area_box_reply { height: 50px; border: 2px solid #aabcff; font-size: 11px; font-family: "Lucida Grande", Verdana,Arial, "Bitstream Vera Sans", sans-serif; }
+.comments_block .contents_target .comment table td div.reply_text_and_buttons div.comment_buttons { text-align: right; }
+.comments_block .contents_target .comment table td div.reply_text_and_buttons div.comment_buttons button { font-size: 11px; font-family: "Lucida Grande", Verdana,Arial, "Bitstream Vera Sans", sans-serif; padding: 2px; border: 1px solid #9ba8d4; background-color: #f3f6ff; margin: 5px 0 0 0; color: #626983; cursor: pointer; }
+.comments_block .contents_target .comment table td div.reply_text_and_buttons div.comment_buttons button.show_on_hover { background-color: transparent; border-color: transparent; }
+.comments_block .contents_target .comment table td div.reply_text_and_buttons div.comment_buttons button.show_on_hover:hover { background-color: #f3f6ff; border-color: #9ba8d4; }
+
+.comments_block .contents_target .reply_holder .reply { padding: 5px; margin: 5px; font-size: 10px; }
+.comments_block .contents_target .reply table { width: 100%; }
+.comments_block .contents_target .reply table td.added_by { }
+.comments_block .contents_target .reply table td.comment_left { width: 56px; }
+.comments_block .contents_target .reply table td.comment_left a.profile_pic { width: 40px; height: 40px; padding: 3px; border: 1px solid #eeeeee; border-radius: 3px; -moz-border-radius: 3px; display: block; }
+.comments_block .contents_target .reply table td.comment_left a.profile_pic img { width: 40px; height: 40px; border: 1px solid white; margin: -1px 0 0 -1px; }
+.comments_block .contents_target .reply table td.comment_middle {  }
+.comments_block .contents_target .reply table td.comment_middle p { padding-bottom: 7px; }
+.comments_block .contents_target .reply table td.comment_right { width: 50px; }
+.comments_block .contents_target .reply table td.comment_right div.comment_tools { position: relative; }
+.comments_block .contents_target .reply table td.comment_right div.comment_tools div.voting_block { position: absolute; top: 0px; right: 0px; }
+.comments_block .contents_target .reply table td.comment_right div.comment_tools div.voting_block span.vote_up { display: block; height: 10px; width: 20px; background: url('/assets/img/comment_arrows.gif') -20px -10px no-repeat; cursor: pointer; }
+.comments_block .contents_target .reply table td.comment_right div.comment_tools div.voting_block span.vote_up:active { background-position: -20px 0px; }
+.comments_block .contents_target .reply:hover table td.comment_right div.comment_tools div.voting_block span.vote_up { background-position: 0px -10px; }
+.comments_block .contents_target .reply:hover table td.comment_right div.comment_tools div.voting_block span.vote_up:active { background-position: 0px 0px; }
+.comments_block .contents_target .reply table td.comment_right div.comment_tools div.voting_block span.vote_count { display: block; width: 20px; text-align: center; padding: 1px 0; font-size: 13px; }
+.comments_block .contents_target .reply table td.comment_right div.comment_tools div.voting_block span.vote_count span.pos { color: green; }
+.comments_block .contents_target .reply table td.comment_right div.comment_tools div.voting_block span.vote_count span.neu { color: gray; }
+.comments_block .contents_target .reply table td.comment_right div.comment_tools div.voting_block span.vote_count span.neg { color: red; }
+.comments_block .contents_target .reply table td.comment_right div.comment_tools div.voting_block span.vote_down { display: block; height: 10px; width: 20px; background: url('/assets/img/comment_arrows.gif') -20px -20px no-repeat; cursor: pointer; }
+.comments_block .contents_target .reply table td.comment_right div.comment_tools div.voting_block span.vote_down:active { background-position: -20px -30px; }
+.comments_block .contents_target .reply:hover table td.comment_right div.comment_tools div.voting_block span.vote_down { background-position: 0px -20px; }
+.comments_block .contents_target .reply:hover table td.comment_right div.comment_tools div.voting_block span.vote_down:active { background-position: 0px -30px; }
+
+.comments_block table.comments_footer {  }

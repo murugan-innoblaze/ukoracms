@@ -1,0 +1,1 @@
+<noscript><div style="text-align: center; border: 5px dotted red; margin: 20px; padding: 20px;"><h1 style="color: red; text-align:center;">THIS WEBSITE REQUIRES JAVASCRIPT</h1><p style="text-align:center;">Please enable javascript to view this webpage. Thank you!</p></div></noscript>

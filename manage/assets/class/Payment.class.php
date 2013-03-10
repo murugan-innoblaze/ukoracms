@@ -1,0 +1,1 @@
+<?php include FRONTEND_DOCUMENT_ROOT . '/assets/class/Payment.class.php'; ?>

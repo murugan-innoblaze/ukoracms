@@ -1,0 +1,18 @@
+
+a.facebook_connect { height: 27px; width: 177px; background-image: url('/assets/img/bttn_facebook_connect.gif'); background-repeat: no-repeat; background-position: top left; display: block; cursor: pointer; }
+a.facebook_connect:hover { background-position: bottom left; }
+a.twitter_connect { height: 27px; width: 177px; background-image: url('/assets/img/bttn_twitter_connect.gif'); background-repeat: no-repeat; background-position: top left; display: block; cursor: pointer; }
+a.twitter_connect:hover { background-position: bottom left; }
+a.google_connect { height: 27px; width: 177px; background-image: url('/assets/img/bttn_google_connect.gif'); background-repeat: no-repeat; background-position: top left; display: block; cursor: pointer; }
+a.google_connect:hover { background-position: bottom left; }
+a.linkedin_connect { height: 27px; width: 177px; background-image: url('/assets/img/bttn_linkedin_connect.gif'); background-repeat: no-repeat; background-position: top left; display: block; cursor: pointer; }
+a.linkedin_connect:hover { background-position: bottom left; }
+
+a.facebook_login { height: 27px; width: 177px; background-image: url('/assets/img/bttn_facebook_login.gif'); background-repeat: no-repeat; background-position: top left; display: block; cursor: pointer; }
+a.facebook_login:hover { background-position: bottom left; }
+a.twitter_login { height: 27px; width: 177px; background-image: url('/assets/img/bttn_twitter_login.gif'); background-repeat: no-repeat; background-position: top left; display: block; cursor: pointer; }
+a.twitter_login:hover { background-position: bottom left; }
+a.google_login { height: 27px; width: 177px; background-image: url('/assets/img/bttn_google_login.gif'); background-repeat: no-repeat; background-position: top left; display: block; cursor: pointer; }
+a.google_login:hover { background-position: bottom left; }
+a.linkedin_login { height: 27px; width: 177px; background-image: url('/assets/img/bttn_linkedin_login.gif'); background-repeat: no-repeat; background-position: top left; display: block; cursor: pointer; }
+a.linkedin_login:hover { background-position: bottom left; }

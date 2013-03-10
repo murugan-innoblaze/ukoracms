@@ -1,0 +1,3 @@
+<ul class="breadcrumb">
+	<li><a href="/" title="<?=SITE_NAME?>"><?=SITE_NAME?></a> <?php $breadcrumbs = self::getBreadCrumbs(); if(isset($breadcrumbs) and !empty($breadcrumbs)){ ?> <span class="divider">&gt;</span> </li><?php $count = 1; foreach($breadcrumbs as $breadcrumb){ if($count != sizeof($breadcrumbs)){ ?> <li><a href="<?=$breadcrumb['path']?>" title="<?=prepareTag($breadcrumb['dzpro_page_title'])?>"><?=prepareStringHtml($breadcrumb['dzpro_page_name'])?></a></li> <span class="divider">&gt;</span> <?php }else{ ?> <li class="active"><?=prepareStringHtml($breadcrumb['dzpro_page_name'])?> </li> <?php } $count++; } } ?>
+</ul><!-- end .breadcrumb -->

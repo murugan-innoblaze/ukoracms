@@ -1,0 +1,10 @@
+Options +FollowSymlinks
+RewriteEngine On
+
+RewriteBase /
+
+RewriteCond %{HTTP_HOST} !^manage.ukora.com$
+RewriteRule ^(.*)$ http://manage.ukora.com/$1 [R=301,NC,L,QSA]
+
+RewriteRule ^login$ /login/ [R,NC]
+RewriteRule ^login/$ /login.php [L,NC]

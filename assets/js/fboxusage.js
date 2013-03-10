@@ -1,0 +1,5 @@
+$().ready(function(){
+	$("a.fancybox").fancybox({overlayShow : true, overlayColor : '#222222', overlayOpacity : 0.6, opacity : true, transitionIn : 'elastic', transitionOut : 'elastic', titleShow : false, easingIn : 'easeOutBack', easingOut : 'easeInBack'}); 
+	$("a.connect").fancybox({overlayShow : true, overlayColor : '#222222', overlayOpacity : 0.6, opacity : true, transitionIn : 'elastic', transitionOut : 'elastic', titleShow : false, easingIn : 'easeOutBack', easingOut : 'easeInBack', href : '/assets/ajax/signup.php'});
+	$('.fancybox_iframe').fancybox({type : 'iframe', width : 460, height : 520, padding : 0, margin : 0, enableEscapeButton : true, overlayColor : '#222222', overlayOpacity : 0.6, opacity : true, transitionIn : 'elastic', transitionOut : 'elastic', titleShow : false, easingIn : 'easeOutBack', easingOut : 'easeInBack', onClosed : function(){ if(typeof reloadCartCanvas == 'function'){ reloadCartCanvas(); } $.ajax({ url : '/assets/ajax/addresses.php', type : 'post', data : 'name=address', success : function(contents){ $('select[name=address]').each(function(){ $(this).html(contents); }); } }); } });
+}); 
