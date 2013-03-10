@@ -1,0 +1,4 @@
+ukoracms
+========
+
+Ukora CMS (standard)
