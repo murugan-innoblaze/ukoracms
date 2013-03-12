@@ -12,3 +12,153 @@ Ukora CMS (standard)
 INSTALLATION INSTRUCTIONS
 =========================
 
+-----------
+
+Add the following .htaccess file in the poster root
+Replacing "theranch.ukora.com" with the new domain name ie: "skydivetheranch.org"
+
+________________________
+
+Options +FollowSymlinks
+Options -Indexes
+RewriteEngine On
+
+RewriteBase /
+
+RewriteCond %{HTTP_HOST} !^theranch.ukora.com$
+RewriteRule ^(.*)$ http://theranch.ukora.com/$1 [R=301,NC,L,QSA]
+
+#Page template
+RewriteRule ^page\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /page.php [L]
+
+#Page not found
+ErrorDocument 404 /404.php
+
+________________________
+
+
+Setup a apache vhost to point:
+manage.skydivetheranch.org directly to siteroot/manage
+
+Then in siteroot/manage add the following .htaccess file
+Replacing "theranch.ukora.com" with the new domain name ie: "skydivetheranch.org"
+
+________________________
+
+Options +FollowSymlinks
+RewriteEngine On
+
+RewriteBase /
+
+RewriteCond %{HTTP_HOST} !^manage.theranch.ukora.com$
+RewriteRule ^(.*)$ http://manage.theranch.ukora.com/$1 [R=301,NC,L,QSA]
+
+RewriteRule ^login$ /login/ [R,NC]
+RewriteRule ^login/$ /login.php [L,NC]
+
+________________________
+
+There are three server configuration files that need to be edited to reflect the location of the site within the new file structure
+Also the references to the domain will need to be updated, also the mysql user and password can be added
+
+1.) siteroot/manage/assets/conf/general.settings.php (File structure, domain)
+2.) siteroot/manage/assets/conf/mysql.settings.php
+3.) siteroot/core/configuration.php (File structure, domain & mysql)
+
+Note: Do not change SITE_SALT in file #1 - for this will break admin login credentials
+
+in your vhosts root create the following shell:
+fix-permissions.sh
+
+________________________
+
+#!/bin/bash
+
+path=${1%/}
+user=${2}
+group="www-data"
+help="\nHelp: This script is used to fix permissions of a ukora cms installation\nyou need to provide the following arguments:\n\t 1) Path to your ukora cms installation\n\t 2) Username of the user that you want to give files/directo$
+
+if [ -z "${path}" ] || [ ! -d "${path}/manage" ] || [ ! -f "${path}/manage/assets/class/Form.class.php" ]; then
+echo "Please provide a valid ukora cms path"
+echo -e $help
+exit
+fi
+
+if [ -z "${user}" ] || [ "`id -un ${user} 2> /dev/null`" != "${user}" ]; then
+echo "Please provide a valid user"
+echo -e $help
+exit
+fi
+
+cd $path;
+
+echo -e "Changing ownership of all contents of \"${path}\" :\n user => \"${user}\" \t group => \"${group}\"\n"
+chown -R ${user}:${group} .
+echo "Changing permissions of all directories inside \"${path}\" to \"750\"..."
+find . -type d -exec chmod u=rwx,g=rx,o= {} \;
+echo -e "Changing permissions of all files inside \"${path}\" to \"640\"...\n"
+find . -type f -exec chmod u=rw,g=r,o= {} \;
+
+chown ${group}:${user} uploads -R
+chmod ug=rwx,o= $path/uploads
+cd $path/uploads;
+
+echo "Changing permissions of all directories inside \"${path}/uploads\" to \"750\"..."
+find . -type d -exec chmod ug=rwx,o= {} \;
+echo -e "Changing permissions of all files inside \"${path}/uploads\" to \"640\"...\n"
+find . -type f -exec chmod ug=rw,o= {} \;
+
+cd $path/assets/title/
+chown ${group}:${user} cache -R
+chmod ug=rwx,o= $path/assets/title/cache
+cd $path/assets/title/cache;
+
+echo -e "Changing permissions of all files inside \"${path}/assets/title/cache\" to \"640\"...\n"
+find . -type f -exec chmod ug=rw,o= {} \;
+
+cd $path/assets/elements/
+chown ${group}:${user} * -R
+chmod ug=rwx,o= $path/assets/elements/
+echo -e "Changing permissions of all files inside \"${path}/assets/elements/\" to \"640\"...\n"
+find . -type f -exec chmod ug=rw,o= {} \;
+
+cd $path/assets/templates/
+chown ${group}:${user} * -R
+chmod ug=rwx,o= $path/assets/templates/
+echo -e "Changing permissions of all files inside \"${path}/assets/templates/\" to \"640\"...\n"
+find . -type f -exec chmod ug=rw,o= {} \;
+
+________________________
+
+(assuming apache2 runs as: www-data)
+(assuming posterUser will own poster cyte files)
+Now run:
+
+./fix-permissions.sh /some/folder/structure/skydivetheranch/htdocs posterUser
+
+to set permissions
+
+________________________
+
+run: crontab -u posterUser -e
+now setup the following cronjob:
+
+________________________
+
+* * * * * php /var/www/vhosts/theranch.com/htdocs/manage/assets/cron/crontab.php
+
+________________________
+
+The path referenced above is in need of an edit also. Open siteroot/htdocs/manage/assets/cron/crontab.php
+And fix the path at the top of the file.
+
+________________________
+
+You should be up now.
+Please contact b@ukora.com with questions.
+
+--------------
